@@ -1,0 +1,16 @@
+<div class="glance-block" ui-sref="detail({spotId: $ctrl.spot.index})">
+    <div class="glance-block__detail">
+        <img class="glance-block__icon" src="images/starbucks.png" />
+        <div class="glance-block__info">
+            <review title="$ctrl.spot.name" rating="$ctrl.spot.overall.rating" ></review>
+            <p class="glance-block__hours">Today: </p>
+        </div>
+    </div>
+    <div class="glance-block__aspects">
+        <swiper>
+            <div class="swiper-slide" ng-repeat="(aspect, aspectData) in $ctrl.spot.aspects">
+                <review title="aspect" rating="aspectData.rating" size="large"></review>
+            </div>
+        </swiper>
+    </div>
+</div>

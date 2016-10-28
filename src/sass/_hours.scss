@@ -1,0 +1,16 @@
+.hours {
+
+    @at-root #{&}__table {
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    @at-root #{&}__day {
+        text-align: right;
+        color: $muted-color-2;
+    }
+
+    @at-root #{&}__warning {
+        color: $glance-color-red;
+    }
+}

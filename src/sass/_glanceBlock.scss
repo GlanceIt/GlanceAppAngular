@@ -1,0 +1,43 @@
+.glance-block {
+    padding: 1rem;
+    cursor: pointer;
+
+    @at-root #{&}__detail {
+        margin-bottom: 1rem;
+    }
+
+    @at-root #{&}__icon {
+        height: 7rem;
+        width: 7rem;
+        margin-right: 1rem;
+        border-radius: 50%;
+    }
+
+    @at-root #{&}__info {
+        display: inline-block;
+        vertical-align: top;
+        color: $muted-color;
+    }
+
+    @at-root #{&}__hours {
+        font-size: 1rem;
+        margin: 0;
+        margin-top: 0.5rem;
+    }
+
+    &:after {
+        content: '';
+        height: 1px;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #c4c4c4;
+        display: block;
+        z-index: 15;
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        backface-visibility: hidden;
+
+        -webkit-transform: scaleY(.5);
+        transform: scaleY(.5);
+    }
+}

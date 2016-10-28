@@ -1,0 +1,33 @@
+<div class="page">
+    <detail-header spot="spotDetail.spot" background-image="spotDetail.backgroundImage">
+        <div class="tabs__row">
+            <a class="tabs__tab tabs__tab--active" href="">Reviews</a>
+            <a class="tabs__tab" href="">Details</a>
+            <a class="tabs__tab" href="">Photos</a>
+            <!-- <a class="tabs__tab" ui-sref="detail.reviews()" ui-sref-active="tabs__tab--active">Reviews</a>
+            <a class="tabs__tab" ui-sref="detail.details()" ui-sref-active="tabs__tab--active">Details</a>
+            <a class="tabs__tab" ui-sref="detail.photos()" ui-sref-active="tabs__tab--active">Photos</a> -->
+        </div>
+    </detail-header>
+
+    <!-- This is where the tab content will load -->
+    <!-- <ui-view class="tab__content"></ui-view> -->
+
+    <div class="content reviews">
+        <div class="review" ng-repeat="(aspect, aspectData) in spotDetail.spot.aspects">
+            <review title="aspect" rating="aspectData.rating" size="xlarge"></review>
+        </div>
+    </div>
+
+    <div class="content spot-details">
+        <address-block address="spotDetail.spot.address" location="spotDetail.spot.location"></address-block>
+
+        <hours hours="spotDetail.spot.hours"></hours>
+
+        <contacts contacts="spotDetail.spot.contacts"></contacts>
+    </div>
+
+    <!-- <div class="content spot-photos">
+
+    </div> -->
+</div>

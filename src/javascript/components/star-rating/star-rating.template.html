@@ -1,0 +1,19 @@
+<ul
+    class="star-rating"
+    ng-class="{readonly: $ctrl.readonly, 'star-rating--{{$ctrl.size}}': $ctrl.size}"
+    >
+    <li
+        ng-repeat="star in $ctrl.stars"
+        class="star-rating__star"
+        ng-class="{'star-rating__star--filled': star.filled, 'star-rating__star--{{$ctrl.size}}': $ctrl.size}"
+        ng-click="toggle($index)"
+        >
+        <i class="fa fa-star"></i> <!-- or &#9733 -->
+        <i
+            ng-if="star.isHalfStar"
+            class="fa fa-star-half star-rating__icon--half"
+            ng-class="{'star-rating__icon--half--{{$ctrl.size}}': $ctrl.size}"
+            >
+        </i>
+    <li>
+</ul>

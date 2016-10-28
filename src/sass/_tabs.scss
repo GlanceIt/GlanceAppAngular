@@ -1,0 +1,67 @@
+// Maybe call it buttons group???
+.tabs {
+
+    @at-root #{&}__row {
+        -ms-flex-item-align: center;
+        -webkit-align-self: center;
+        align-self: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-lines: single;
+        -moz-box-lines: single;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: none;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
+
+    @at-root #{&}__tab {
+        border: 1px solid $glance-color-secondary;
+        color: $glance-color-secondary;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        border-radius: 5px;
+        line-height: 27px;
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        background: 0 0;
+        padding: 0 10px;
+        margin: 0;
+        height: 3rem;
+        white-space: nowrap;
+        position: relative;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 14px;
+        font-family: inherit;
+        cursor: pointer;
+        outline: 0;
+
+        border-radius: 0;
+        border-left-width: 0;
+        width: 100%;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+
+        @at-root #{&}--active {
+            background: $glance-color-secondary;
+            color: $white-color;
+        }
+
+        &:first-child {
+            border-radius: 5px 0 0 5px;
+            border-left-width: 1px;
+            border-left-style: solid;
+        }
+
+        &:last-child {
+            border-radius: 0 5px 5px 0;
+        }
+    }
+}

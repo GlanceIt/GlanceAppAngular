@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-weight: 200;
+    height: 100%;
+    width: 100%;
+    // overflow: hidden;
+    outline: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-focus-ring-color: rgba(0,0,0,0);
+}
+
+body {
+    // background: #eee;
+    font-family: 'Montserrat', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}

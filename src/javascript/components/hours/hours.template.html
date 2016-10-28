@@ -1,0 +1,11 @@
+<div class="hours">
+    <h4 class="title title--medium">Hours</h4>
+    <table class="hours__table" ng-if="$ctrl.hours">
+        <tr ng-repeat="(day, hours) in $ctrl.hours">
+            <td class="hours__day">{{day}}</td>
+            <td></td>
+            <td class="hours__times">{{hours[0][0]}} to {{hours[0][1]}}</td>
+        </tr>
+    </table>
+    <p class="hours__warning" ng-if="!$ctrl.hours">Oops! Since like we do not have hours for this place</p>
+</div>

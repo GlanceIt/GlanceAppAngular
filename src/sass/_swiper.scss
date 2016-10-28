@@ -1,0 +1,42 @@
+.swiper {
+    margin-bottom: 1rem;
+
+    @at-root #{&}__title {
+        margin: .3125rem 1rem 1rem;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 1.25;
+    }
+
+    @at-root #{&}-container {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 1rem;
+
+        .swiper-peek & {
+            padding-left: 0;
+        }
+    }
+
+    @at-root #{&}__slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    @at-root #{&}-pagination-bullet-active {
+        background: $glance-color;
+    }
+}

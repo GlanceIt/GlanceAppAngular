@@ -1,0 +1,20 @@
+<div class="page">
+    <swiper class="swiper-peek">
+        <div class="swiper-slide swiper__slide" ng-repeat="billboard in home.categoryBillboards">
+            <billboard billboard="billboard"></billboard>
+        </div>
+    </swiper>
+
+    <swiper title="{{home.aroundYouTitle}}">
+        <div class="swiper-slide swiper__slide" ng-repeat="billboard in home.aroundYouBillboards">
+            <billboard billboard="billboard"></billboard>
+        </div>
+    </swiper>
+
+    <h3 class="title--section">{{home.spotsAroundTitle}}</h3>
+    <glance-block
+        ng-repeat="result in home.spotsAround"
+        spot="result"
+        >
+    </glance-block>
+</div>

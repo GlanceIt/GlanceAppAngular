@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app="GlanceApp">
+    <head>
+        <meta charset="utf-8">
+        <title>Glance</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#ffcd60">
+
+        <link rel="manifest" href="/manifest.json">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/css/swiper.min.css">
+        <link rel="stylesheet" href="../dist/assets/css/glance.css">
+    </head>
+    <body>
+        <!-- navbar will listen to events -->
+        <navbar></navbar>
+
+        <!-- This is where the views will animate -->
+        <ui-view class="view"></ui-view>
+
+        <!-- might want loading to not take over navbar space -->
+        <loading-spinner></loading-spinner>
+
+        <!-- Libraries -->
+        <script src="lib/jquery/jquery-3.1.0.min.js"></script>
+        <script src="lib/angular/angular.min.js"></script>
+        <script src="lib/angular/angular-ui-router.min.js"></script>
+
+        <!-- Swiper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.min.js"></script>
+
+        <!-- Modules -->
+        <script src="javascript/glance/glance.module.js"></script>
+        <script src="javascript/glance/data.module.js"></script>
+        <!-- <script src="javascript/components/spinner/spinner.module.js"></script> -->
+
+        <!-- Services -->
+        <script src="javascript/glance/glance.service.js"></script>
+
+        <!-- Routes -->
+        <script src="javascript/routes.js"></script>
+
+        <!-- Home -->
+        <script src="javascript/views/home/home.controller.js"></script>
+
+        <!-- 'Search' module artifacts -->
+        <script src="javascript/views/search/search.controller.js"></script>
+
+        <!-- 'Spot Details' module artifacts -->
+        <script src="javascript/views/detail/detail.controller.js"></script>
+
+        <script src="javascript/components/navbar/navbar.component.js"></script>
+
+        <script src="javascript/components/text-nav/text-nav.component.js"></script>
+
+        <script src="javascript/components/detail-header/detail-header.component.js"></script>
+        <script src="javascript/components/address/address.component.js"></script>
+        <script src="javascript/components/hours/hours.component.js"></script>
+        <script src="javascript/components/contacts/contacts.component.js"></script>
+
+        <script src="javascript/components/glance-block/glance-block.component.js"></script>
+        <script src="javascript/components/review/review.component.js"></script>
+        <script src="javascript/components/star-rating/star-rating.component.js"></script>
+        <script src="javascript/components/swiper/swiper.component.js"></script>
+        <script src="javascript/components/billboard/billboard.component.js"></script>
+
+        <!-- 'Spinner' module artifacts -->
+        <script src="javascript/components/spinner/spinner.module.js"></script>
+        <script src="javascript/components/spinner/spinner.component.js"></script>
+    </body>
+</html>

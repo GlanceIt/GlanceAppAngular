@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="GlanceApp">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="assets/css/glance.css">
+        <title>Glance</title>
+    </head>
+    <body>
+
+        <div class="container">
+            <ui-view></ui-view>
+        </div>
+
+        <loading-spinner></loading-spinner>
+
+        <!-- Libraries -->
+        <script src="lib/jquery/jquery-3.1.0.min.js"></script>
+        <script src="lib/angular/angular.min.js"></script>
+        <script src="lib/angular/angular-ui-router.min.js"></script>
+
+        <!-- We would want the minified version here from dist -->
+        <script src="assets/js/main.min.js"></script>
+    </body>
+</html>

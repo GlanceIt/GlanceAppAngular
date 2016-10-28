@@ -1,0 +1,25 @@
+.title {
+    color: $muted-color;
+    text-transform: capitalize;
+    margin: 0;
+    font-weight: 200;
+
+    @at-root #{&}--section {
+        margin: .3125rem 1rem 1rem;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 1.25;
+    }
+
+    @at-root #{&}--small {
+        font-size: 1.5rem;
+    }
+
+    @at-root #{&}--medium {
+        font-size: 1.8rem;
+    }
+
+    @at-root #{&}--large {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,11 @@
+<div class="detail-header" ng-style="{'background-image': 'url({{$ctrl.backgroundImage}})'}">
+    <div class="detail-header__overlay"></div>
+    <div class="detail-header__content">
+        <div class="detail-header__info">
+            <review title="$ctrl.spot.name" rating="$ctrl.spot.overall.rating" size="small"></review>
+            <p class="detail-header__hours">Today: </p>
+        </div>
+        <div class="detail-header__footer" ng-transclude>
+        </div>
+    </div>
+</div>
